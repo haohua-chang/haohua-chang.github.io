@@ -1309,8 +1309,10 @@ ninja-keys::part(ninja-input-wrapper) {
 .news-date {
   background-color: #2b5c9e; /* 背景颜色 */
   color: white; /* 字体颜色 */
-  padding: 4px 2px; /* 内边距 */
+  padding: 2px 6px; /* 内边距 - 减少上下和左右的间距 */
   border-radius: 2px; /* 圆角 */
   display: inline-block; /* 让它和文本一样宽 */
   font-weight: bold; /* 加粗文字 */
+  margin: 0; /* 删除默认的外边距 */
+  line-height: 1.2; /* 调整行高以控制文本与背景的距离 */
 }
