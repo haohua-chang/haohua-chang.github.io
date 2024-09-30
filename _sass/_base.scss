@@ -27,7 +27,7 @@ table {
   td,
   th {
     font-size: 1rem;
-    padding: 1px 1rem 1px 0;
+    padding: 0;
   }
 
   th {
@@ -1309,7 +1309,7 @@ ninja-keys::part(ninja-input-wrapper) {
 .news-date {
   background-color: #2b5c9e; /* 背景颜色 */
   color: white; /* 字体颜色 */
-  padding: 2px 6px; /* 内边距 - 减少上下和左右的间距 */
+  padding: 0; /* 内边距 - 减少上下和左右的间距 */
   border-radius: 2px; /* 圆角 */
   display: inline-block; /* 让它和文本一样宽 */
   font-weight: bold; /* 加粗文字 */
