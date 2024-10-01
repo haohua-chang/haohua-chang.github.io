@@ -17,7 +17,7 @@
         {% for item in awards limit: awards_limit %}
           <tr style="display: flex; align-items: center;">
             <th scope="row" class="awards-date" style="width: auto; font-size: 10px; padding: 2px 2px; margin: 0; background-color: #2b5c9e; color: white; border-radius: 2px;">
-              {{ item.date }}
+              {{ item.release_status }}
             </th>
             <td style="margin-left: 15px;">
               {% if item.inline %}
