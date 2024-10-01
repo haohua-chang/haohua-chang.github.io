@@ -15,9 +15,11 @@
           {% assign news_limit = news_size %}
         {% endif %}
         {% for item in news limit: news_limit %}
-          <tr>
-            <th scope="row" class="news-date" style="width: auto; font-size: 12px; padding: 2px 4px; margin: 0; vertical-align: middle;">{{ item.date | date: '%b %d, %Y' | upcase }}</th>
-            <td>
+          <tr style="display: flex; align-items: center;">
+            <th scope="row" class="news-date" style="width: auto; font-size: 12px; padding: 2px 4px; margin: 0; background-color: #2b5c9e; color: white; border-radius: 2px;">
+              {{ item.date | date: '%b %d, %Y' | upcase }}
+            </th>
+            <td style="margin-left: 10px;">
               {% if item.inline %}
                 {{ item.content | remove: '<p>' | remove: '</p>' | emojify }}
               {% else %}
